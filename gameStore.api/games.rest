@@ -1,0 +1,29 @@
+GET http://localhost:5190/games
+
+###
+
+POST http://localhost:5190/games
+Content-Type: application/json
+
+{
+    "name": "Minecraf II",
+    "genreId": 5,
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+
+PUT http://localhost:5190/games/1
+Content-Type: application/json
+
+ { 
+    "name": "Street Fighter II Limited edition ",
+    "genreId": 2,
+    "price": 99.99,
+    "releaseDate": "1192-07-15"
+  }
+
+###
+
+DELETE http://localhost:5190/games/1
